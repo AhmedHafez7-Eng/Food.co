@@ -40,17 +40,6 @@ $(document).ready(function () {
 	});
 
 	/* -----------------
-			Trigger Toggle Navbar Menu
-		--------------*/
-
-	function togglemenu() {
-		var menuToggle = document.querySelector('.menuToggle');
-		var menu = document.querySelector('.navlinks');
-		menuToggle.classList.toggle('activenav');
-		menu.classList.toggle('activenav');
-	}
-
-	/* -----------------
 			Trigger To Top Button
 		--------------*/
 
@@ -133,3 +122,13 @@ $(document).ready(function () {
 		}
 	}
 });
+/* -----------------
+			Trigger Toggle Navbar Menu
+		--------------*/
+
+function togglemenu() {
+	var menuToggle = document.querySelector('.menuToggle');
+	var menu = document.querySelector('.navlinks');
+	menuToggle.classList.toggle('activenav');
+	menu.classList.toggle('activenav');
+}
