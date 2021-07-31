@@ -11,8 +11,8 @@
 	<link rel="icon" href="img/tabLogo.png"> <!-- To make icon in title -->
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/mystyle.css">
-	<link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
@@ -20,25 +20,34 @@
 	<div class="pageLoader"></div>
 	<!-- Start Navbar -->
 	<header>
-		<a href="#" class="logo">
+		<a href="#" class="logo wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.1s" translate="no">
 			<img src="img/tabLogo.png" alt="Logo" loading="lazy">
 			Food<span>.</span>co
 		</a>
-		<div class="menuToggle" onclick="togglemenu();"></div>
+		<div class="menuToggle wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.3s" onclick="togglemenu();">
+		</div>
 		<ul class="navlinks">
-			<li class="activeColor" onclick="togglemenu();"><a href="#banner">Home</a></li>
-			<li><a href="#about" onclick="togglemenu();">About</a></li>
-			<li><a href="#menu" onclick="togglemenu();">Menu</a></li>
-			<li><a href="#experts" onclick="togglemenu();">Experts</a></li>
-			<li><a href="#testim" onclick="togglemenu();">Testimonials</a></li>
-			<li><a href="#contact" onclick="togglemenu();">Contact</a></li>
+			<li class="activeColor wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.3s"
+				onclick="togglemenu();"><a href="#banner">Home</a></li>
+			<li class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.5s"><a href="#about"
+					onclick="togglemenu();">About</a></li>
+			<li class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.7s"><a href="#menu"
+					onclick="togglemenu();">Menu</a></li>
+			<li class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.9s"><a href="#experts"
+					onclick="togglemenu();">Experts</a>
+			</li>
+			<li class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="1.1s"><a href="#testim"
+					onclick="togglemenu();">Testimonials</a></li>
+			<li class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="1.3s"><a href="#contact"
+					onclick="togglemenu();">Contact</a>
+			</li>
 		</ul>
 	</header>
 	<!-- End Navbar -->
 
 	<!-- Start Banner -->
 	<section class="banner" id="banner">
-		<div class="content" data-aos="zoom-in-up" data-aos-duration="2000">
+		<div class="content wow bounceInDown" data-wow-duration="2s" data-wow-delay="1.9s">
 			<h2>Always Choose Good!</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -51,8 +60,8 @@
 	<!-- Start About -->
 	<section class="about" id="about">
 		<div class="row">
-			<div class="col50" data-aos="fade-right" data-aos-duration="2000">
-				<h2 class="titleText" data-aos="fade-down" data-aos-duration="2000"><span>A</span>bout Us</h2>
+			<div class="col50 wow slideInRight" data-wow-duration="2s">
+				<h2 class="titleText"><span>A</span>bout Us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -64,7 +73,7 @@
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.</p>
 			</div>
-			<div class="col50" data-aos="fade-left" data-aos-duration="2000">
+			<div class="col50 wow slideInLeft" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/img1.jpg" loading="lazy">
 				</div>
@@ -75,18 +84,22 @@
 
 	<!-- Start Menu -->
 	<section class="menu" id="menu">
-		<div class="title" data-aos="fade-up" data-aos-duration="2000">
+		<div class="title wow bounceInUp" data-wow-duration="2s">
 			<h2 class="titleText">Our <span>M</span>enu</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
-		<ul class="controls" data-aos="fade-right" data-aos-duration="2000">
-			<li class="buttons active" data-filter="all">All</li>
-			<li class="buttons" data-filter="pasta">Pasta</li>
-			<li class="buttons" data-filter="salad">Salad</li>
-			<li class="buttons" data-filter="soap">Soap</li>
+		<ul class="controls">
+			<li class="buttons active wow bounceInRight" data-wow-duration="2s" data-wow-delay=".1s" data-filter="all">
+				All</li>
+			<li class="buttons wow bounceInRight" data-wow-duration="2s" data-wow-delay=".4s" data-filter="pasta">Pasta
+			</li>
+			<li class="buttons wow bounceInRight" data-wow-duration="2s" data-wow-delay=".7s" data-filter="salad">Salad
+			</li>
+			<li class="buttons wow bounceInRight" data-wow-duration="2s" data-wow-delay="1s" data-filter="soap">Soap
+			</li>
 		</ul>
 		<div class="content">
-			<div class="box salad active">
+			<div class="box salad active wow slideInRight" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu1.jpg" loading="lazy">
 				</div>
@@ -94,7 +107,7 @@
 					<h3>Special Salads</h3>
 				</div>
 			</div>
-			<div class="box soap">
+			<div class="box soap wow slideInDown" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu2.jpg" loading="lazy">
 				</div>
@@ -102,7 +115,7 @@
 					<h3>Special Soup</h3>
 				</div>
 			</div>
-			<div class="box pasta">
+			<div class="box pasta wow slideInLeft" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu3.jpg" loading="lazy">
 				</div>
@@ -110,7 +123,7 @@
 					<h3>Special Pasta</h3>
 				</div>
 			</div>
-			<div class="box salad">
+			<div class="box salad wow slideInRight" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu4.jpg" loading="lazy">
 				</div>
@@ -118,7 +131,7 @@
 					<h3>Special Salads</h3>
 				</div>
 			</div>
-			<div class="box soap">
+			<div class="box soap wow slideInDown" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu5.jpg" loading="lazy">
 				</div>
@@ -126,7 +139,7 @@
 					<h3>Special Soup</h3>
 				</div>
 			</div>
-			<div class="box pasta">
+			<div class="box pasta wow slideInLeft" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu6.jpg" loading="lazy">
 				</div>
@@ -134,7 +147,7 @@
 					<h3>Special Pasta</h3>
 				</div>
 			</div>
-			<div class="box pasta">
+			<div class="box pasta wow slideInRight" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu6.jpg" loading="lazy">
 				</div>
@@ -142,7 +155,7 @@
 					<h3>Special Pasta</h3>
 				</div>
 			</div>
-			<div class="box soap">
+			<div class="box soap wow slideInDown" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu5.jpg" loading="lazy">
 				</div>
@@ -150,7 +163,7 @@
 					<h3>Special Soup</h3>
 				</div>
 			</div>
-			<div class="box pasta">
+			<div class="box pasta wow slideInLeft" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/menu6.jpg" loading="lazy">
 				</div>
@@ -159,26 +172,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="title" data-aos="fade-up" data-aos-duration="2000">
+		<div class="btnContainer wow slideInUp" data-wow-duration="2s">
 			<a href="#" class="btn">View More</a>
 		</div>
 		<div id="myModal" class="modal">
 			<span id="close">&times;</span>
-			<img class="modal-content" id="imgModal" loading="lazy">
-			<h3 id="title"></h3>
+			<img class="modal-content wow pulse" data-wow-duration="2s" id="imgModal" loading="lazy">
+			<h3 id="modalTitle"></h3>
 		</div>
 	</section>
 	<!-- End Menu -->
 
 	<!-- Start Experts -->
 	<section class="experts" id="experts">
-		<div class="title" data-aos="fade-up" data-aos-duration="2000">
+		<div class="title wow bounceInUp" data-wow-duration="2s">
 			<h2 class="titleText">Our Kitchen <span>E</span>xperts</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
 		<div class="content">
-			<div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-				data-aos-duration="1000">
+			<div class="box wow flipInX" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/expert1.jpg" loading="lazy">
 				</div>
@@ -186,8 +198,7 @@
 					<h3>Someone Famous</h3>
 				</div>
 			</div>
-			<div class="box" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
-				data-aos-duration="1000">
+			<div class="box wow flipInX" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/expert2.jpg" loading="lazy">
 				</div>
@@ -195,8 +206,7 @@
 					<h3>Someone Famous</h3>
 				</div>
 			</div>
-			<div class="box" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"
-				data-aos-duration="1000">
+			<div class="box wow flipInX" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/expert3.jpg" loading="lazy">
 				</div>
@@ -204,8 +214,7 @@
 					<h3>Someone Famous</h3>
 				</div>
 			</div>
-			<div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
-				data-aos-duration="1000">
+			<div class="box wow flipInX" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/expert4.jpg" loading="lazy">
 				</div>
@@ -219,12 +228,12 @@
 
 	<!-- Start Testimonials -->
 	<section class="testim" id="testim">
-		<div class="title white" data-aos="fade-up" data-aos-duration="2000">
+		<div class="title white wow bounceInUp" data-wow-duration="2s">
 			<h2 class="titleText">They <span>S</span>ay About Us</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
 		<div class="content">
-			<div class="box" data-aos="flip-right" data-aos-duration="2000">
+			<div class="box wow flipInY" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/testi1.jpg" loading="lazy">
 				</div>
@@ -236,7 +245,7 @@
 					<h3>Someone Famous</h3>
 				</div>
 			</div>
-			<div class="box" data-aos="flip-up" data-aos-duration="2000">
+			<div class="box wow flipInY" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/testi2.jpg" loading="lazy">
 				</div>
@@ -248,7 +257,7 @@
 					<h3>Someone Famous</h3>
 				</div>
 			</div>
-			<div class="box" data-aos="flip-left" data-aos-duration="2000">
+			<div class="box wow flipInY" data-wow-duration="2s">
 				<div class="imgBx">
 					<img src="img/testi3.jpg" loading="lazy">
 				</div>
@@ -267,22 +276,22 @@
 
 	<!-- Start Contact -->
 	<section class="contact" id="contact">
-		<div class="title" data-aos="fade-up" data-aos-duration="2000">
+		<div class="title wow bounceInUp" data-wow-duration="2s">
 			<h2 class="titleText"><span>C</span>ontact Us</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
-		<div class="contactForm" data-aos="fade-left" data-aos-duration="2000">
-			<h3>Send Message!</h3>
-			<div class="inputBox">
+		<div class="contactForm wow slideInRight" data-wow-duration="2s">
+			<h3 class="wow slideInLeft" data-wow-duration="2s">Send Message!</h3>
+			<div class="inputBox wow slideInLeft" data-wow-duration="2s">
 				<input type="text" name="" placeholder="Name">
 			</div>
-			<div class="inputBox">
+			<div class="inputBox wow slideInLeft" data-wow-duration="2s">
 				<input type="email" name="" placeholder="Email">
 			</div>
-			<div class="inputBox">
+			<div class="inputBox wow slideInLeft" data-wow-duration="2s">
 				<textarea placeholder="Your Message"></textarea>
 			</div>
-			<div class="inputBox">
+			<div class="inputBox wow slideInLeft" data-wow-duration="2s">
 				<input type="submit" value="Send">
 			</div>
 		</div>
@@ -290,14 +299,15 @@
 	<!-- End Contact -->
 
 	<!-- Start Footer -->
-	<div class="copyrightText">
-		<p>Copyright 2020 <a href="https://github.com/AhmedHafez7-Eng">Ahmed Hafez</a>. All Rights Reserved.</p>
+	<div class="copyrightText wow slideInLeft" data-wow-duration="2s">
+		<p>Copyright 2020 <a href="https://github.com/AhmedHafez7-Eng" translate="no">Ahmed Hafez</a>. All Rights
+			Reserved.</p>
 	</div>
 	<!-- End Footer -->
 
 
 	<!-- Start TO TOP BUTTON -->
-	<div id='toTop' data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-chevron-up fa-lg totop-icon"></i>
+	<div id='toTop' class="wow slideInRight" data-wow-duration=".5s"><i class="fas fa-chevron-up fa-lg totop-icon"></i>
 	</div>
 	<!-- End TO TOP BUTTON -->
 
@@ -305,7 +315,7 @@
 	<!-- End Of Code :) -->
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/all.js"></script>
-	<script src="js/aos.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/myscript.js"></script>
 </body>
 
