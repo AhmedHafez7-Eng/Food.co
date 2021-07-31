@@ -113,6 +113,14 @@ p {
 	letter-spacing: 7px;
 }
 
+.title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .titleText {
 	color: var(--txtColor);
 	font-size: 2em;
@@ -191,24 +199,6 @@ Page Loader
 	opacity: 0;
 }
 
-/* .pageLoader::before {
-	content: '';
-	position: absolute;
-	left: calc(50% - 50px);
-	top: calc(50% - 50px);
-	display: block;
-	border-radius: 50%;
-	width: 0;
-	height: 0;
-	margin: 8px;
-	box-sizing: border-box;
-	border: 62px solid var(--mainColor);
-	border-color: var(--mainColor) transparent var(--mainColor) transparent;
-	animation: pageloader 1.2s infinite;
-	-webkit-animation: pageloader 1.2s infinite;
-} */
-
-
 /*End My Framework*/
 
 /*Start Navbar*/
@@ -230,7 +220,7 @@ header .logo {
 	font-weight: 700;
 	font-size: 2em;
 	text-decoration: none;
-	padding-left: 40px;
+	/* padding-left: 40px; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -377,13 +367,6 @@ header.sticky .logo {
 /*End About*/
 
 /*Start Menu*/
-.title {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
 
 .menu .controls {
 	display: flex;
@@ -495,6 +478,11 @@ header.sticky .logo {
 	color: var(--mainColor);
 }
 
+.menu .btnContainer {
+	display: flex;
+	justify-content: center;
+}
+
 /* For Popup */
 .menu .content .box .imgBx img {
 	cursor: pointer;
@@ -521,7 +509,7 @@ header.sticky .logo {
 	margin-top: 10px;
 }
 
-#myModal #title {
+#myModal #modalTitle {
 	position: absolute;
 	bottom: 5%;
 	left: 50%;
@@ -598,6 +586,11 @@ header.sticky .logo {
 .experts .content .box {
 	width: 250px;
 	margin: 15px;
+	transition: transform .3s ease;
+	-webkit-transition: transform .3s ease;
+	-moz-transition: transform .3s ease;
+	-ms-transition: transform .3s ease;
+	-o-transition: transform .3s ease;
 }
 
 .experts .content .box .imgBx {
@@ -630,11 +623,11 @@ header.sticky .logo {
 }
 
 .experts .content .box:hover {
-	transform: rotate(3deg);
-	-webkit-transform: rotate(3deg);
-	-moz-transform: rotate(3deg);
-	-ms-transform: rotate(3deg);
-	-o-transform: rotate(3deg);
+	transform: skew(-3deg);
+	-webkit-transform: skew(-3deg);
+	-moz-transform: skew(-3deg);
+	-ms-transform: skew(-3deg);
+	-o-transform: skew(-3deg);
 }
 
 .experts .content .box:hover .text {
@@ -672,7 +665,7 @@ header.sticky .logo {
 	flex-direction: row;
 	margin-top: 40px;
 	perspective: 600px;
-	perspective-origin: center;
+	perspective-origin: center center;
 }
 
 .testim .content .box {
@@ -684,6 +677,11 @@ header.sticky .logo {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	transition: transform .3s ease;
+	-webkit-transition: transform .3s ease;
+	-moz-transition: transform .3s ease;
+	-ms-transition: transform .3s ease;
+	-o-transition: transform .3s ease;
 }
 
 .testim .content .box:hover {
@@ -978,6 +976,12 @@ header.sticky .logo {
 		text-align: center;
 		margin-bottom: 15px;
 		padding: 10px;
+	}
+}
+
+@media (max-width:500px) {
+	#myModal #modalTitle {
+		bottom: 25%;
 	}
 }
 
